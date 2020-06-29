@@ -1,5 +1,4 @@
 import React from "react";
-import { AkCode, AkCodeBlock } from "@atlaskit/code";
 
 const divStyle = {
   textAlign: "center"
@@ -8,30 +7,36 @@ const titleStyle = {
   marginTop: "2em",
   fontFamily: "Inter",
   fontSize: "3em",
+  fontWeight: "100",
   color: "#222222"
 };
 const fontStyle = {
   fontSize: "18px",
   fontFamily: "Inter",
   fontWeight: "bold",
-  background: "rgb(40, 52, 71) none repeat scroll 0% 0%",
-  color: "rgb(220, 229, 245)",
   borderRadius: "4px",
   display: "inline",
   lineHeight: "1.66667",
   overflowX: "auto",
   whiteSpace: "preWrap",
-  padding: "3px 8px"
+  padding: "3px 8px",
+  color: "#222222"
 };
-
-const jsCode = `kubescale up <token>`;
-const darkTheme = { mode: "dark" };
-
+const codeBackground = {
+  color: "rgb(220, 229, 245)",
+  background: "rgb(40, 52, 71) none repeat scroll 0% 0%"
+};
+const blackWeight = {
+  fontWeight: "600"
+};
 export function Title() {
   return (
     <div style={divStyle}>
-      <h1 style={titleStyle}>Production Kubernetes within Seconds</h1>
-      <span style={fontStyle}>
+      <h1 style={titleStyle}>
+        <span style={blackWeight}>Production Kubernetes</span> anywhere
+      </h1>
+      <span style={fontStyle}>Connect your workers within seconds </span>{" "}
+      <span style={{ ...fontStyle, ...codeBackground }}>
         <code>
           $ kubescale <span style={{ color: "#CC5577" }}>up</span>
         </code>
