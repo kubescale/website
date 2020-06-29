@@ -2,7 +2,8 @@ import React from "react";
 import {
   Create,
   AtlassianNavigation,
-  PrimaryButton
+  PrimaryButton,
+  generateTheme
 } from "@atlaskit/atlassian-navigation";
 
 const AboutButton = () => <PrimaryButton>About</PrimaryButton>;
@@ -24,6 +25,7 @@ const Home = () => (
 export default function Menu() {
   return (
     <AtlassianNavigation
+      theme={theme}
       label="site"
       primaryItems={[
         <AboutButton />,
@@ -35,3 +37,9 @@ export default function Menu() {
     />
   );
 }
+
+const theme = generateTheme({
+  name: "high-contrast",
+  backgroundColor: "#F3F3F3",
+  highlightColor: "#CC5577"
+});
