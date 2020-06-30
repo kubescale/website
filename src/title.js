@@ -44,7 +44,7 @@ export function Title() {
       </h1>
         <div style={{width:"max-content", margin: "0 auto"}}>
         <p style={{...fontStyle, textAlign: "left", marginBottom: "0px", display: "block", }}>We take care of the control plane,</p>
-        <span style={fontStyle}>You can run your workers on any machine. </span>{" "}
+        <span style={fontStyle}>You are able to run your workers on any machine, on any network. </span>{" "}
             <span style={{ ...fontStyle, ...codeStyle }}>
         $ kubescale <span style={{ color: "#CC5577" }}>up</span></span>
         </div>
