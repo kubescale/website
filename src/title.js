@@ -22,7 +22,8 @@ const fontStyle = {
   padding: "3px 8px",
   color: "#222222"
 };
-const codeBackground = {
+const codeStyle = {
+  whiteSpace: "nowrap",
   color: "rgb(220, 229, 245)",
   background: "rgb(40, 52, 71) none repeat scroll 0% 0%"
 };
@@ -36,7 +37,7 @@ export function Title() {
         <span style={blackWeight}>Production Kubernetes</span> anywhere
       </h1>
       <span style={fontStyle}>Connect your workers within seconds </span>{" "}
-      <span style={{ ...fontStyle, ...codeBackground }}>
+      <span style={{ ...fontStyle, ...codeStyle }}>
         <code>
           $ kubescale <span style={{ color: "#CC5577" }}>up</span>
         </code>
