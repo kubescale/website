@@ -53,6 +53,7 @@ export function Title() {
           <div className="progress">
             <Progress/>
           </div>
+          <p style={{fontFamily: "Inter", marginTop: "40px", fontStyle: "italic"}}><span style={{fontWeight: "bold"}}>June 2020:</span> We have started working on the k3s operator which manages the control planes.</p>
       </Card>
         </div>
     </div>

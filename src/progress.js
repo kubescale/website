@@ -12,7 +12,7 @@ const items = [
     {
         id: 'visited-1',
         label: 'Design',
-        percentageComplete: 0,
+        percentageComplete: 20,
         status: 'visited',
         noLink: true,
     },
