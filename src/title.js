@@ -47,7 +47,7 @@ export function Title() {
             <span style={{ ...fontStyle, ...codeStyle }}>
              $ kubescale <span style={{ color: "#CC5577" }}>up</span></span>
         </div>
-        <div style={{marginTop: "30px"}}>
+        <div style={{marginTop: "100px"}}>
       <Card>
           <h2 style={{color: "#cc5577"}}>The Roadmap</h2>
           <div className="progress">
