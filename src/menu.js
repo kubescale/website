@@ -3,19 +3,41 @@ import {
   Create,
   AtlassianNavigation,
   PrimaryButton,
+    PrimaryDropdownButton,
   generateTheme
 } from "@atlaskit/atlassian-navigation";
 
-const NavButton = (props) => {
+export default function Menu() {
     return (
-        <div className="navButton">
-            <PrimaryButton>{props.children}</PrimaryButton>
-        </div>
+        <AtlassianNavigation
+            theme={theme}
+            label="site"
+            primaryItems={[
+                <PricingButton />,
+                <FeaturesButton />,
+
+                <AboutButton />,
+                <DocumentationButton />,
+            ]}
+            renderSettings={Signin}
+            renderSignIn={CreateButton}
+            renderProductHome={Home}
+        />
     );
 }
+
+const Home = () => <h1 style={{ color: "black", fontFamily: "Inter", marginRight: "5px" }}>Kubescale</h1>;
+
+const FeaturesButton = () => <NavButton>Features</NavButton>;
 const AboutButton = () => <NavButton>About</NavButton>;
 const DocumentationButton = () => <NavButton>Docs</NavButton>;
 const PricingButton = () => <NavButton>Pricing</NavButton>;
+
+const Signin = () => (
+    <div className="navButton">
+        <PrimaryDropdownButton>My Account</PrimaryDropdownButton>
+    </div>
+)
 
 const CreateButton = () => (
   <Create
@@ -25,27 +47,15 @@ const CreateButton = () => (
     onClick={console.log}
   />
 );
-const Signin = () => <NavButton>My Account</NavButton>;
-
-const Home = () => (
-  <h1 style={{ color: "black", fontFamily: "Inter" }}>Kubescale</h1>
-);
-export default function Menu() {
-  return (
-    <AtlassianNavigation
-      theme={theme}
-      label="site"
-      primaryItems={[
-        <AboutButton />,
-        <DocumentationButton />,
-        <PricingButton />
-      ]}
-      renderSettings={Signin}
-      renderSignIn={CreateButton}
-      renderProductHome={Home}
-    />
-  );
+// Wrapper to add custom theming
+const NavButton = (props) => {
+    return (
+        <div className="navButton">
+            <PrimaryButton>{props.children}</PrimaryButton>
+        </div>
+    );
 }
+
 
 const theme = generateTheme({
   name: "high-contrast",

@@ -1,10 +1,22 @@
-.App {
-  font-family: Roboto;
-  text-align: center;
+/* HEADER formatting (atlaskit is not that flexible) */
+header {
+  background-color: transparent !important;
 }
-html {
-  margin: 0px;
+
+header .navButton button:not(:hover),
+div[class*="PrimaryItemsContainer"] button:not(:hover) {
+  background-color: transparent !important;
+  bacground: none !important;
 }
+
+header ::after {
+  background: none !important;
+}
+header::after {
+   background: none !important;
+}
+
+/* BODY settings (background, no margins..) */
 body {
   background-color: #cc5577;
   /* background by SVGBackgrounds.com */
@@ -14,17 +26,15 @@ body {
   margin: 0px;
 }
 
-header {
-  background-color: transparent !important;
+html {
+  margin: 0px;
+}
+.progress div:empty {
+  background-color: #cc5577;
+}
 
-}
-header .navButton button:not(:hover) {
-  background-color: transparent !important;
-  bacground: none !important;
-}
-header ::after {
-  background: none !important;
-}
-header::after {
-   background: none !important;
+/* General settings */
+a
+{
+  text-decoration:none;
 }
