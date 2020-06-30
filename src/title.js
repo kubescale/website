@@ -29,7 +29,7 @@ const codeStyle = {
   color: "rgb(220, 229, 245)",
   background: "rgb(40, 52, 71) none repeat scroll 0% 0%",
     padding: "6px 8px",
-    marginLeft: "4px",
+    marginLeft: "10px",
 };
 const blackWeight = {
   fontWeight: "600"
@@ -41,11 +41,11 @@ export function Title() {
       <h1 style={titleStyle}>
         <span style={blackWeight}>Production Kubernetes</span> anywhere
       </h1>
-        <div style={{width:"max-content", margin: "0 auto"}}>
+        <div style={{ margin: "0 auto", display: "table"}}>
         <p style={{...fontStyle, textAlign: "left", marginBottom: "0px", display: "block", }}>We take care of the control plane,</p>
         <span style={fontStyle}>You run your workers on any machine, on any network. </span>{" "}
             <span style={{ ...fontStyle, ...codeStyle }}>
-        $ kubescale <span style={{ color: "#CC5577" }}>up</span></span>
+             $ kubescale <span style={{ color: "#CC5577" }}>up</span></span>
         </div>
         <div style={{marginTop: "30px"}}>
       <Card>
