@@ -1,4 +1,4 @@
-import React, { PureComponent }from "react";
+import React from "react";
 import { ProgressTracker } from '@atlaskit/progress-tracker';
 
 const items = [

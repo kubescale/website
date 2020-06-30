@@ -2,7 +2,6 @@ import React from "react";
 
 import Progress from "./progress"
 import Card from "./Card"
-import progress from "./progress";
 
 const divStyle = {
   textAlign: "center"
