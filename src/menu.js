@@ -5,11 +5,17 @@ import {
   PrimaryButton,
   generateTheme
 } from "@atlaskit/atlassian-navigation";
-import Button from "@atlaskit/button";
 
-const AboutButton = () => <PrimaryButton>About</PrimaryButton>;
-const DocumentationButton = () => <PrimaryButton>Docs</PrimaryButton>;
-const PricingButton = () => <PrimaryButton>Pricing</PrimaryButton>;
+const NavButton = (props) => {
+    return (
+        <div className="navButton">
+            <PrimaryButton>{props.children}</PrimaryButton>
+        </div>
+    );
+}
+const AboutButton = () => <NavButton>About</NavButton>;
+const DocumentationButton = () => <NavButton>Docs</NavButton>;
+const PricingButton = () => <NavButton>Pricing</NavButton>;
 
 const CreateButton = () => (
   <Create
@@ -19,7 +25,7 @@ const CreateButton = () => (
     onClick={console.log}
   />
 );
-const Signin = () => <PrimaryButton>My Account</PrimaryButton>;
+const Signin = () => <NavButton>My Account</NavButton>;
 
 const Home = () => (
   <h1 style={{ color: "black", fontFamily: "Inter" }}>Kubescale</h1>
@@ -34,8 +40,8 @@ export default function Menu() {
         <DocumentationButton />,
         <PricingButton />
       ]}
-      renderSignIn={Signin}
-      renderSettings={CreateButton}
+      renderSettings={Signin}
+      renderSignIn={CreateButton}
       renderProductHome={Home}
     />
   );

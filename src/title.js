@@ -19,7 +19,7 @@ const fontStyle = {
   lineHeight: "1.66667",
   overflowX: "auto",
   whiteSpace: "preWrap",
-  padding: "3px 8px",
+  padding: "6px 8px",
   color: "#222222"
 };
 const codeStyle = {

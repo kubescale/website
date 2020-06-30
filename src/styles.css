@@ -13,3 +13,18 @@ body {
   background-size: cover;
   margin: 0px;
 }
+
+header {
+  background-color: transparent !important;
+
+}
+header .navButton button:not(:hover) {
+  background-color: transparent !important;
+  bacground: none !important;
+}
+header ::after {
+  background: none !important;
+}
+header::after {
+   background: none !important;
+}
