@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 
 import Menu from "./menu.js";
-import {Title} from "./title";
+import {Title} from "./components/landing/Title";
 import Pricing from "./pages/Pricing";
 import Features from "./pages/Features";
 import About from "./pages/About";

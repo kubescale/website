@@ -1,17 +1,10 @@
 import React from "react";
 
-import Progress from "./progress"
-import Card from "./Card"
-
+import Progress from "./Progress"
+import Card from "../Card"
+import {titleStyle, blackWeight} from "../../styles/fonts"
 const divStyle = {
   textAlign: "center"
-};
-const titleStyle = {
-  marginTop: "2em",
-  fontFamily: "Inter",
-  fontSize: "3em",
-  fontWeight: "100",
-  color: "#222222"
 };
 const fontStyle = {
   fontSize: "18px",
@@ -30,9 +23,6 @@ const codeStyle = {
   background: "rgb(40, 52, 71) none repeat scroll 0% 0%",
     padding: "6px 8px",
     marginLeft: "10px",
-};
-const blackWeight = {
-  fontWeight: "600"
 };
 
 export function Title() {

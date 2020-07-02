@@ -12,6 +12,8 @@
     "@atlaskit/atlassian-navigation": "0.10.14",
     "@atlaskit/code": "11.1.6",
     "@atlaskit/logo": "12.3.5",
+    "@atlaskit/lozenge": "^9.1.9",
+    "@atlaskit/page": "^11.0.14",
     "@atlaskit/page-layout": "^0.6.1",
     "@atlaskit/progress-tracker": "^6.1.8",
     "@atlaskit/theme": "^9.5.6",
