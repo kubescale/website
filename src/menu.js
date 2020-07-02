@@ -5,7 +5,10 @@ import {
   PrimaryButton,
     PrimaryDropdownButton,
   generateTheme
+
 } from "@atlaskit/atlassian-navigation";
+
+import { withRouter } from "react-router-dom";
 
 export default function Menu() {
     return (
@@ -13,11 +16,10 @@ export default function Menu() {
             theme={theme}
             label="site"
             primaryItems={[
-                <PricingButton />,
-                <FeaturesButton />,
-
-                <AboutButton />,
-                <DocumentationButton />,
+                <NavButton to="/pricing">Pricing</NavButton>,
+                <NavButton to="/features">Features</NavButton>,
+                <NavButton to="/about">About</NavButton>,
+                <NavButton to="/docs">Docs</NavButton>,
             ]}
             renderSettings={Signin}
             renderSignIn={CreateButton}
@@ -26,12 +28,10 @@ export default function Menu() {
     );
 }
 
-const Home = () => <h1 style={{ color: "black", fontFamily: "Inter", marginRight: "5px" }}>Kubescale</h1>;
+const Home = () => (<NavButton to="/">
+    <h1 style={{ color: "black", fontFamily: "Inter", marginRight: "5px" }}>Kubescale</h1>
+</NavButton>);
 
-const FeaturesButton = () => <NavButton>Features</NavButton>;
-const AboutButton = () => <NavButton>About</NavButton>;
-const DocumentationButton = () => <NavButton>Docs</NavButton>;
-const PricingButton = () => <NavButton>Pricing</NavButton>;
 
 const Signin = () => (
     <div className="navButton">
@@ -47,14 +47,16 @@ const CreateButton = () => (
     onClick={console.log}
   />
 );
+
 // Wrapper to add custom theming
-const NavButton = (props) => {
+const NavButton = withRouter((props) => {
     return (
         <div className="navButton">
-            <PrimaryButton>{props.children}</PrimaryButton>
+            <PrimaryButton onClick={() => props.history.push(props.to)}>{props.children}</PrimaryButton>
+
         </div>
     );
-}
+})
 
 
 const theme = generateTheme({

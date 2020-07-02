@@ -22,8 +22,9 @@
     "styled-theming": "2.2.0"
   },
   "devDependencies": {
-    "typescript": "3.8.3",
-    "gh-pages": "^1.0.0"
+    "gh-pages": "^1.0.0",
+    "react-router-dom": "^5.2.0",
+    "typescript": "3.8.3"
   },
   "scripts": {
     "start": "react-scripts start",
