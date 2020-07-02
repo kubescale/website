@@ -16,10 +16,10 @@ export default function Menu() {
             theme={theme}
             label="site"
             primaryItems={[
-                <NavButton to="/pricing">Pricing</NavButton>,
-                <NavButton to="/features">Features</NavButton>,
+                <NavButton to="./pricing">Pricing</NavButton>,
+                <NavButton to="./features">Features</NavButton>,
                 <NavButton to="/about">About</NavButton>,
-                <NavButton to="/docs">Docs</NavButton>,
+                <NavButton to="./docs">Docs</NavButton>,
             ]}
             renderSettings={Signin}
             renderSignIn={CreateButton}
@@ -28,7 +28,7 @@ export default function Menu() {
     );
 }
 
-const Home = () => (<NavButton to="/">
+const Home = () => (<NavButton to="./">
     <h1 style={{ color: "black", fontFamily: "Inter", marginRight: "5px" }}>Kubescale</h1>
 </NavButton>);
 
