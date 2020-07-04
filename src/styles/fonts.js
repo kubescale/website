@@ -14,7 +14,7 @@ export const normalWeightFontStyle = {
     ...fontStyle,
     ...normalWeight,
 }
-export const titleStyle = {...fontStyle,
+export const titleStyle = {...normalWeightFontStyle,
     marginTop: "2em",
     fontSize: "3em"
 };
