@@ -43,7 +43,9 @@ export function Title() {
           <div className="progress">
             <Progress/>
           </div>
-          <p style={{fontFamily: "Inter", marginTop: "40px", fontStyle: "italic"}}><span style={{fontWeight: "bold"}}>July 2020:</span> Implemented the Datastore operator. Working on the POC Free Tier operator.</p>
+          <p style={{fontFamily: "Inter", marginTop: "40px", fontStyle: "italic"}}><span style={{fontWeight: "bold"}}>
+              July 2020:</span>
+              Implemented the Datastore operator. Working on the proof-of-concept operator for the free tier.</p>
       </Card>
         </div>
     </div>
