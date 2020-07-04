@@ -76,7 +76,7 @@ export default () => {
                             <p><CheckIcon primaryColor="green"/>Up to 100 workers</p>
                             <p><CheckIcon primaryColor="green"/>Kubescale manages the dataplane</p>
                             <p><CheckIcon primaryColor="green"/>Lite workers</p>
-                            <p><CheckIcon primaryColor="green"/>Isolated Dataplane</p>
+                            <p><CheckIcon primaryColor="green"/>Isolated Dataplane and Controlplane</p>
                             <p><CheckIcon primaryColor="green"/>On-prem distribution</p>
                         </div>
                     </Card>

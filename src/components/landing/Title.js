@@ -43,7 +43,7 @@ export function Title() {
           <div className="progress">
             <Progress/>
           </div>
-          <p style={{fontFamily: "Inter", marginTop: "40px", fontStyle: "italic"}}><span style={{fontWeight: "bold"}}>June 2020:</span> We have started working on the k3s operator which manages the control planes.</p>
+          <p style={{fontFamily: "Inter", marginTop: "40px", fontStyle: "italic"}}><span style={{fontWeight: "bold"}}>July 2020:</span> Implemented the Datastore operator. Working on the POC Free Tier operator.</p>
       </Card>
         </div>
     </div>
