@@ -11,6 +11,7 @@
   "dependencies": {
     "@atlaskit/atlassian-navigation": "0.10.14",
     "@atlaskit/code": "11.1.6",
+    "@atlaskit/icon": "^21.0.0",
     "@atlaskit/logo": "12.3.5",
     "@atlaskit/lozenge": "^9.1.9",
     "@atlaskit/page": "^11.0.14",

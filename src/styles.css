@@ -28,6 +28,7 @@ body {
 
 html {
   margin: 0px;
+  font-family: "Inter", "Roboto", "Ubuntu", "Droid Sans", "sans-serif";
 }
 .progress div:empty {
   background-color: #cc5577;
