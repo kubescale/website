@@ -35,7 +35,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "deployci": "gh-pages -d build  -u 'github-actions-bot <support+actions@github.com>'"
+    "deployci": "npm run build && gh-pages -d build  -u 'github-actions-bot <support+actions@github.com>'"
   },
   "browserslist": [
     ">0.2%",
