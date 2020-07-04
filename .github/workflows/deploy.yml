@@ -20,7 +20,7 @@ jobs:
       - name: Deploy to GH Pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/kubescale/website.git
-          npm run deploy-ci
+          npm run deployci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         if: matrix.node-version == '12.x'
