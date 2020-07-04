@@ -20,8 +20,7 @@ jobs:
       - name: Deploy to GH Pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/kubescale/website.git
-          npm run deploy -u "github-actions-bot <support+actions@github.com>"
+          npm run deploy-ci
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      - name: Updating Domain
-        run: echo "Update domain"
+        if: matrix.node-version == '12.x'
