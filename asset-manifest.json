@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.a24fdcc0.chunk.css",
-    "main.js": "./static/js/main.9359166f.chunk.js",
-    "main.js.map": "./static/js/main.9359166f.chunk.js.map",
+    "main.js": "./static/js/main.252d50a2.chunk.js",
+    "main.js.map": "./static/js/main.252d50a2.chunk.js.map",
     "runtime~main.js": "./static/js/runtime~main.d653cc00.js",
     "runtime~main.js.map": "./static/js/runtime~main.d653cc00.js.map",
     "static/js/2.f47c4590.chunk.js": "./static/js/2.f47c4590.chunk.js",
     "static/js/2.f47c4590.chunk.js.map": "./static/js/2.f47c4590.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.0b646bcdee3885f98b765c041bd1d491.js": "./precache-manifest.0b646bcdee3885f98b765c041bd1d491.js",
+    "precache-manifest.57519beb62606f93df9f41dffcb28d7b.js": "./precache-manifest.57519beb62606f93df9f41dffcb28d7b.js",
     "service-worker.js": "./service-worker.js",
     "static/css/main.a24fdcc0.chunk.css.map": "./static/css/main.a24fdcc0.chunk.css.map"
   }
