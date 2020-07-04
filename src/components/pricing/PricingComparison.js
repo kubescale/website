@@ -73,7 +73,7 @@ export default () => {
                         </div>
                         <Hr/>
                         <div style={{textAlign: "left", marginLeft: "5px"}}>
-                            <p><CheckIcon primaryColor="green"/>Up to 10 workers</p>
+                            <p><CheckIcon primaryColor="green"/>Up to 100 workers</p>
                             <p><CheckIcon primaryColor="green"/>Kubescale manages the dataplane</p>
                             <p><CheckIcon primaryColor="green"/>Lite workers</p>
                             <p><CheckIcon primaryColor="green"/>Isolated Dataplane</p>
