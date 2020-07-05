@@ -28,6 +28,7 @@ export default () => {
 
                         <div style={{textAlign: "left", marginLeft: "5px"}}>
                             <p><CheckIcon primaryColor="green"/>Up to 3 workers</p>
+                            <p><CheckIcon primaryColor="green"/>Secured communication over an encrypted mesh network</p>
                             <p><CheckIcon primaryColor="green"/>Kubescale manages the Dataplane</p>
                         </div>
                     </Card>
@@ -51,6 +52,7 @@ export default () => {
 
                         <div style={{textAlign: "left", marginLeft: "5px"}}>
                             <p><CheckIcon primaryColor="green"/>Up to 10 workers</p>
+                            <p><CheckIcon primaryColor="green"/>Secured communication over an encrypted mesh network</p>
                             <p><CheckIcon primaryColor="green"/>Kubescale manages the dataplane</p>
                             <p><CheckIcon primaryColor="green"/>Lite workers</p>
                         </div>
@@ -74,6 +76,7 @@ export default () => {
                         <Hr/>
                         <div style={{textAlign: "left", marginLeft: "5px"}}>
                             <p><CheckIcon primaryColor="green"/>Up to 100 workers</p>
+                            <p><CheckIcon primaryColor="green"/>Secured communication over an encrypted mesh network</p>
                             <p><CheckIcon primaryColor="green"/>Kubescale manages the dataplane</p>
                             <p><CheckIcon primaryColor="green"/>Lite workers</p>
                             <p><CheckIcon primaryColor="green"/>Isolated Dataplane and Controlplane</p>
